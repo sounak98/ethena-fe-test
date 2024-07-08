@@ -1,8 +1,9 @@
+import clsx from "clsx";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Barlow } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const barlow = Barlow({ weight: ["400", "500", "600"], preload: false });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={clsx(barlow.className)}>{children}</body>
     </html>
   );
 }
