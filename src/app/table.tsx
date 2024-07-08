@@ -1,7 +1,7 @@
 "use client";
 
 import { activePlatforms, collateralData } from "./data";
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 
 export default function CollateralTable() {
   const totalSum = useMemo(() => {
