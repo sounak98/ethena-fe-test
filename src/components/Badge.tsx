@@ -1,6 +1,6 @@
 import React from "react";
 
-interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {
+interface BadgeProps {
   title: string;
   value: string;
 }

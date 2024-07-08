@@ -1,14 +1,16 @@
 import Badge from "./Badge";
 
+interface TitleBarProps {
+  title: string;
+  lastUpdated: Date;
+  badgeInfos: { title: string; value: string }[];
+}
+
 export default function TitleBar({
   title,
   lastUpdated,
   badgeInfos,
-}: {
-  title: string;
-  lastUpdated: Date;
-  badgeInfos: { title: string; value: string }[];
-}) {
+}: TitleBarProps) {
   return (
     <div className="flex items-center px-4 py-2 rounded w-full border e-border-color bg-[rgba(20,24,33,0.60)]">
       <div className="flex flex-1">
